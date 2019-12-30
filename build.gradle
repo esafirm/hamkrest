@@ -4,10 +4,9 @@ plugins {
     id 'signing'
 }
 
-group 'com.natpryce.github'
-
-version(hasProperty("-version") ? property("-version") : "SNAPSHOT")
-println "building version ${version}"
+allprojects {
+    group 'com.natpryce.github'    
+}
 
 repositories {
     mavenCentral()
